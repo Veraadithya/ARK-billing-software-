@@ -112,7 +112,7 @@ const templates = {
                 </tr>
                 <!-- Section Details Rows -->
                 <tr>
-                    <td style="border: 1.5px solid #000; padding: 5px 8px; font-size: 11px;"><strong>GSTIN:</strong> <span contenteditable="true" style="min-width: 140px; display: inline-block;"></span></td>
+                    <td style="border: 1.5px solid #000; border-right: none; padding: 5px 8px; font-size: 11px;"><strong>GSTIN:</strong> <span contenteditable="true" style="min-width: 140px; display: inline-block;"></span></td>
                     </tr>
                     <tr>
                     <td style="border: 1.5px solid #000; padding: 5px 8px; font-size: 11px;"><strong>Mobile:</strong> <span contenteditable="true" style="min-width: 100px; display: inline-block;"></span></td>
@@ -133,11 +133,11 @@ const templates = {
                 </tr>
                 <!-- PARTICULARS Row -->
                 <tr>
-                    <th colspan="2" style="background: #0c1a3a; color: white; border: 1.5px solid #000; padding: 6px; font-size: 12px; height: 26px;">PARTICULARS</th>
+                    <th colspan="2" style="background: #0c1a3a; color: white; border: 1.5px solid #000; padding: 6px; font-size: px; height: 26px;">PARTICULARS</th>
                 </tr>
                 <tr>
                     <td colspan="2" style="border: 1.5px solid #000; vertical-align: top; padding: 8px; height: 180px;">
-                        <div contenteditable="true" style="width: 100%; min-height: 160px; outline: none; font-size: 11px; line-height: 1.6;"></div>
+                        <div contenteditable="true" style="width: 100%; min-height: 160px; outline: none; font-size: 25px;font-weight: bold; line-height: 1.6;"></div>
                     </td>
                 </tr>
             </tbody>
@@ -146,7 +146,7 @@ const templates = {
         <!-- Summary Footer -->
         <div style="margin-top: 15px; font-size: 14px; padding-bottom: 4px; border-bottom: 1.5px solid #0c1a3a; display: flex; justify-content: space-between;">
             <div><strong>Received Amount in words:</strong> <span id="grand-total-words" style="text-transform: capitalize; padding-left: 8px; font-weight: 500;">Zero Rupees Only</span></div>
-            <div style="font-weight: bold;">Only.</div>
+            <div style="font-weight: bold;">.</div>
         </div>
     `,
   quotation: `
@@ -272,7 +272,7 @@ const templates = {
         <!-- Terms -->
         <div class="terms-conditions">
             <strong>Terms &amp; Conditions:</strong><br>
-            1. <strong>GST will be Charged Extra.</strong>&nbsp; 2. Transit Insurance will be provided by the company on customer demand; if arranged by the customer the company will not be liable for any coverage on damages.&nbsp; 3. In case any physical damage is not noted on the equipment there will not be any coverage for electrical/mechanical defects.&nbsp; 4. Electrical/Electronic fittings, carpentry works done only on customer demand with extra charges.&nbsp; 5. Advance amount should be paid on confirmation of order; 80% of the payment should be provided before transportation.&nbsp; 6. Quotation is valid for only 30 days from date of issue.&nbsp; 7. Charges may vary in case of fuel price hike or transportation problems.&nbsp; 8. All goods will be moved only on <em>"AS IS WHERE IS"</em> basis.
+            1. <strong>GST will be Charged Extra.</strong>&nbsp; 2. Transit Insurance will be provided by the company on customer demand; if arranged by the customer the company will not be liable for any coverage on damages.&nbsp; 3. In case any physical damage is not noted on the equipment there will not be any coverage for electrical/mechanical defects.&nbsp; 4. Electrical/Electronic fittings, carpentry works done only on customer demand with extra charges.&nbsp; 5. Advance amount should be paid on confirmation of order; 80% of the payment should be provided before transportation and 20% will be collected after delivery.&nbsp; 6. Quotation is valid for only 30 days from date of issue.&nbsp; 7. Charges may vary in case of fuel price hike or transportation problems.&nbsp; 8. All goods will be moved only on <em>"AS IS WHERE IS"</em> basis.
         </div>
     `,
 
@@ -287,7 +287,7 @@ const templates = {
             <br>
             Received with thanks from <span contenteditable="true" style="min-width: 450px; display: inline-block; font-weight: 600;"></span><br>
             the sum of Rupees <span contenteditable="true" style="min-width: 600px; display: inline-block; font-weight: 600;" id="amount-words"></span><br>
-            by Cash / Cheque / DD No. <span contenteditable="true" style="min-width: 200px; font-weight: 600;"></span> Dated <span contenteditable="true" class="date-field" style="min-width: 120px; font-weight: 600;"></span><br>
+            by Cash / UPI / Cheque / DD No. <span contenteditable="true" style="min-width: 200px; font-weight: 600;"></span> Dated <span contenteditable="true" class="date-field" style="min-width: 120px; font-weight: 600;"></span><br>
             towards <span contenteditable="true" style="min-width: 250px; font-weight: 600;"></span> From <span contenteditable="true" style="min-width: 150px; font-weight: 600;"></span> to <span contenteditable="true" style="min-width: 150px; font-weight: 600;"></span>.
         </div>
 
@@ -316,7 +316,7 @@ const templates = {
         <!-- Declaration -->
         <div class="declaration-text">
             Dear Sir/Madam;<br>
-            Herewith, we declare that all the Goods are Used Household articles and the below described goods are shifted from&nbsp;<span contenteditable="true" style="min-width:190px;"></span>&nbsp;to&nbsp;<span contenteditable="true" style="min-width:190px;"></span>. The below mentioned Goods does not have any Commercial value and not for sale.
+            Herewith, we declare that all the Goods are Used Household/Office articles and the below described goods are shifted from&nbsp;<span contenteditable="true" style="min-width:190px;"></span>&nbsp;to&nbsp;<span contenteditable="true" style="min-width:190px;"></span>. The below mentioned Goods does not have any Commercial value and not for sale.
         </div>
 
         <!-- Consignor / Consignee -->
@@ -332,11 +332,11 @@ const templates = {
             <tr>
                 <td style="padding:5px 8px; border-top:1px solid var(--border-color);">
                     <div style="margin-bottom:4px; line-height:1.7; font-size:12px;">Mobile:&nbsp;<span contenteditable="true" style="min-width:190px; border-bottom:1px dashed #94a3b8; display:inline-block;"></span></div>
-                    <div style="line-height:1.7; font-size:12px;">GSTIN:&nbsp;<span contenteditable="true" style="min-width:195px; border-bottom:1px dashed #94a3b8; display:inline-block;"></span></div>
+                    
                 </td>
                 <td style="padding:5px 8px; border-top:1px solid var(--border-color);">
                     <div style="margin-bottom:4px; line-height:1.7; font-size:12px;">Mobile:&nbsp;<span contenteditable="true" style="min-width:190px; border-bottom:1px dashed #94a3b8; display:inline-block;"></span></div>
-                    <div style="line-height:1.7; font-size:12px;">GSTIN:&nbsp;<span contenteditable="true" style="min-width:195px; border-bottom:1px dashed #94a3b8; display:inline-block;"></span></div>
+                    
                 </td>
             </tr>
         </table>
